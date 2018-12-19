@@ -1099,8 +1099,8 @@
             this.updateView();
             this.container.show();
             this.move();
-            this.element.trigger('show.daterangepicker', this);
             this.isShowing = true;
+            this.element.trigger('show.daterangepicker', this);
         },
 
         hide: function(e) {
@@ -1122,8 +1122,8 @@
             $(document).off('.daterangepicker');
             $(window).off('.daterangepicker');
             this.container.hide();
-            this.element.trigger('hide.daterangepicker', this);
             this.isShowing = false;
+            this.element.trigger('hide.daterangepicker', this);
         },
 
         toggle: function(e) {
